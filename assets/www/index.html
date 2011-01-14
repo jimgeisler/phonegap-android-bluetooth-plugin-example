@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Bluetooth Example Application</title>
+	<link rel="stylesheet" href="jquery.mobile-1.0a2.min.css" />
+	<script src="jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="bluetooth_service.js"></script>      
+	<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+	<style type="text/css">
+	   a {
+           color: blue;
+           cursor: hand;
+	   }
+	   a.reallink {
+	       text-decoration: underline;
+	   }
+	   a.no_underline {
+	       text-decoration: none;
+	   }
+	   div.deviceList {
+	       padding: 5px;
+	   }
+	</style>
+</head>
+<body>
+
+<div>
+    <h1>Bluetooth Devices</h1>
+    
+    <div class="deviceList">
+        <a id="get-discoverable-devices" class="reallink">Find some devices!</a>
+        <ul id="devices">
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
